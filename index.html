@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <title>My 1st madlib</title>
+</head>
+<body>
+  <h1>1st content on a madlib</h1>
+  <div>
+    <label>Name</label>
+    <input type="text" id="name" placeholder="You dummy">
+  </div>
+  <div>
+    <label>Age</label>
+    <input type="text" id="age" placeholder="How old you dinasour?">
+  </div>
+  <div>
+    <label>Location</label>
+    <input type="text" id="location" placeholder="Where are you sitting idiot">
+  </div>
+  <div>
+    <label>Fav food</label>
+    <input type="text" id="food" placeholder="Me likey food!">
+  </div>
+  <div>
+    <label>Something Kinky</label>
+    <input type="text" id="kinky" placeholder="you perv">
+  </div>
+  <button id="generate">I'm feeling lucky</button>
+  <hr/>
+<h2>Here is my story</h2>
+  <span id="story"></span>
+<script>
+  const storyButton = document.getElementById("generate")
+  const generate = function () {
+    const name = document.getElementById("name").value
+    const age = document.getElementById("age").value
+    const location = document.getElementById("location").value
+    const food = document.getElementById("food").value
+    const kinky = document.getElementById("kinky").value
+    const story = document.getElementById("story")
+    
+    story.innerHTML = `I'm ${name}`
+  }
+  storyButton.addEventListener("click", generate)
+</script>
+
+
+
+
+</body>
