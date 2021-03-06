@@ -29,6 +29,7 @@
 <h2>Here is my story</h2>
   <span id="story"></span>
 <script>
+  
   const storyButton = document.getElementById("generate")
   const generate = function () {
     const name = document.getElementById("name").value
@@ -37,13 +38,19 @@
     const food = document.getElementById("food").value
     const kinky = document.getElementById("kinky").value
     const story = document.getElementById("story")
-    
-    story.innerHTML = `I'm ${name}`
+    alert ("Are you sure you wanna see this?")
+
+    story.innerHTML = `So about ${age} years ago I was really into ${kinky}. My real name was Doris
+    but I used to go by the name ${name}. I was the talk of ${location}. My 
+    masterpiece was smearing ${age} ${food}s all over my face and finding anyone called ${name}
+    to come up and kissing me on my ${kinky} bits`
   }
   storyButton.addEventListener("click", generate)
+
 </script>
 
 
 
 
 </body>
+
